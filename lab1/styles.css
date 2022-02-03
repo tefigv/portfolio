@@ -1,0 +1,24 @@
+
+h1{
+	font-family: Georgia, Arial, Tahoma, Serif;
+	font-size: 30px;
+	text-align: center;	
+}
+
+h2{
+	font-family: Georgia, Arial, Tahoma, Serif;           
+        font-size: 18px;
+        text-align: center;
+}
+
+p{
+	font-size: 18px;
+	text-align: justify;
+	display: block;
+    	margin-top: 1em;
+   	margin-bottom: 1em;
+    	margin-left: 150px;
+    	margin-right: 150px;
+}
+
+

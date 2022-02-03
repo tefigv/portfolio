@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Stephanie's Pics</title>
+        <link rel = "stylesheet" type = "text/css" href = "styles.css">
+
+    </header>
+    <body>
+    <style>
+        body {font-family: "Lato", sans-serif}
+	/* Box-sizing reset: //w3bits.com/?p=3225 */
+	html {
+  		box-sizing: initial;
+	}
+
+	/* The Masonry Container */
+	.gallery {
+    		column-gap: 0;
+    		column-fill: initial;
+  		max-width: 100%;
+  		column-gap: 0;
+	}
+
+	.picture {
+		display: inline-block;
+    		vertical-align: top;
+		margin: 7px;
+	}
+	
+	img {
+		align-items: center;
+	}
+
+	/* Masonry on large screens */
+	.picture only screen and (min-width: 1024px) {
+  		.gallery {
+    			column-count: 2;
+  		}	
+	}
+
+	/* Masonry on medium-sized screens */
+	.picture only screen and (max-width: 1023px) and (min-width: 768px) {
+  		.gallery {
+    			column-count: 2;
+  		}
+	}
+
+	/* Masonry on small screens */
+	.picture only screen and (max-width: 767px) and (min-width: 540px) {
+  		.gallery {
+    			column-count: 1;
+  		}
+	}
+        
+        </style>
+        <!--Boostrap menu -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://www.stephswebsite.click/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://www.stephswebsite.click/portfolio.html">PORTFOLIO</a>
+                        </li>
+			<li="nav-item">
+                        <a class="nav-link" href= "https://www.stephswebsite.click/about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://www.stephswebsite.click/reviews.html">REVIEWS</a>
+                        </li>
+                </ul>
+        </div>
+        </nav>
+	
+       <h1>Portfolio</h1>
+	<div class = "gallery">	
+      		 <div class = "picture">
+	       		<img src="https://www.canon.com.au/-/media/images/stories/peru-photography-guide-jordan-hammond/image-5-jordanh-cuscollama-1000.ashx?la=en" width = 400>
+       		</div>
+       		<div class = "picture">
+        		<img src="https://i.pinimg.com/474x/86/14/52/8614524927a952c6f06bf816114f0721--peruvian-clothing-peruvian-people.jpg"width = 330>
+       		</div>
+       		<div class = "picture">
+			<img src="https://images.squarespace-cdn.com/content/v1/5d7bfbc8e264fa13abb5b41b/1574401730221-AMYPKJEQJU0YYGE2E5M8/alicia_chinchero_41933254702_o.jpg" width = 350>
+		</div>
+		<div class = "picture">
+			<img src="https://www.digitalphotomentor.com/photography/2018/12/peru-lamas-ladies-cusco-1200px-550x367.jpg" width=400>
+		</div>
+		<div class = "picture" >
+			<img src="https://i.etsystatic.com/20017760/c/2400/1905/0/607/il/1d93c7/2949854817/il_340x270.2949854817_psv7.jpg" width=400>    
+		</div>
+		<div class = "picture">
+			<img src="https://www.planetware.com/wpimages/2019/12/peru-in-pictures-best-places-to-photograph-ollantaytambo-street-and-shops.jpg" width=400>
+		</div>
+		<div class = "picture">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_RdFSmoqXaLdsyKZKfiLf-tlDFw-oXDzzg&usqp=CAU" width=400>
+		</div>
+		<div class = "picture">
+			<img src="https://livinginperu.gumlet.io/wp-content/uploads/2018/07/family-e1530632622115.png?compress=true&quality=80&w=640&dpr=2.6" width=400>
+		</div>
+		<div class = "picture"> 
+			<img src="https://i.ytimg.com/vi/nuU2r5az_NM/maxresdefault.jpg" width=400>
+    		</div>
+	</div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>

@@ -1,0 +1,244 @@
+ .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  .header li a:hover,
+  .header .menu-btn:hover {
+ background-color: #E2E5EE;
+}
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+/* menu */
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+
+  .header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+/* @media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+ .deal h3 {
+    margin: 50px;
+  }
+  .contact {
+    text-align: center;
+} */
+/* @media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+   
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+} */
+
+/* end of manu mar */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  .header-2 {
+    background-color: #B2D6FF;
+  }
+  
+  .content {
+    background-color: #EAEDF0;
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .sign-up {
+    background-color: #D6E9FE;
+  }
+  
+  .feature-1 {
+    background-color: #9DD3E0;
+  }
+  
+  .feature-2 {
+    background-color: #054E61;
+  }
+  
+  .feature-3 {
+    background-color: #7BA5B0;
+  }
+  /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      width: 50%;
+    }
+  }
+  /* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page {
+      width: 960px;
+      margin: 0 auto;
+    }
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      width: 33.3%;
+      /* order: 2; */
+    }
+    .header {
+      height: 400px;
+    }
+  }
+  .contact {
+    height: 200px;
+    
+  }
+
+  a{
+      color: #53C8E6;
+  }
+  h1{
+      display:block;
+    }
+    .contact{
+        height: 150px;
+        background-color: #0B7CC2;
+        padding: 20px;
+        margin: 0px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        display: block;
+        text-align: center;
+        color: black;
+        padding: 20px;
+        margin: auto;
+        width: 100%;
+        height: 150px;
+       }
